@@ -53,6 +53,7 @@ const Product = styled.div`
 const ProductDetail = styled.div`
   flex: 2;
   display: flex;
+  padding: 20px;
 `;
 const Image = styled.img`
   width: 200px;
@@ -64,14 +65,17 @@ flex-direction:column;
 justify-content:space-around;
 `;
 const ProductName = styled.span``;
-const ProductId = styled.span``;
+const ProductId = styled.div``;
 const ProductColor = styled.div`
+  margin-top: 10px;
   width: 20px;
   height: 20px;
   border-radius: 50%;
   background-color: ${(props) => props.color};
 `;
-const ProductSize = styled.span``;
+const ProductSize = styled.div`
+  margin-top: 10px;
+`;
 const PriceDetail = styled.span`
   flex: 1;
   display: flex;
@@ -122,7 +126,9 @@ const SummeryItem = styled.div`
   font-weight:${(props) => props.type === "total" && "500"}
   font-size:${(props) => props.type === "total" && "24px"}
 `;
-const SummeryItemText = styled.span``;
+const SummeryItemText = styled.span`
+  margin: 5px;
+`;
 
 const SummeryItemPrice = styled.span``;
 const Button = styled.button`

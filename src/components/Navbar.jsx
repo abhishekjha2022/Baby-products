@@ -3,9 +3,12 @@ import styled from "styled-components";
 import SearchIcon from "@mui/icons-material/Search";
 import Badge from "@mui/material/Badge";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
+import { mobile } from "../responsive";
 
 const Container = styled.div`
   height: 60px;
+  ${mobile({ color: "black" })}
+  }
 `;
 
 const Wrapper = styled.div`
@@ -13,6 +16,7 @@ const Wrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  ${mobile({ padding: "10px 0px" })}
 `;
 
 const Left = styled.div`
@@ -41,10 +45,11 @@ const MenuItem = styled.div`
 const Language = styled.span`
   font-size: 14px;
   cursor: pointer;
+  ${mobile({ display: "none" })}
 `;
 
 const SearchContainer = styled.div`
-  border: 1px soild lightgrey;
+  border: 1px solid lightgrey;
   display: flex;
   align-items: center;
   margin-left: 25px;
@@ -52,6 +57,7 @@ const SearchContainer = styled.div`
 `;
 const Input = styled.input`
   border: none;
+  outline: none;
 `;
 
 const Logo = styled.h1`
